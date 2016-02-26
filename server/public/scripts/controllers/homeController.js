@@ -1,3 +1,3 @@
-myApp.controller('HomeController', ['$scope', function($scope) {
-  $scope.test='test';
-}]);
+// myApp.controller('HomeController', ['$scope', function($scope) {
+//   $scope.pic=;
+// }]);

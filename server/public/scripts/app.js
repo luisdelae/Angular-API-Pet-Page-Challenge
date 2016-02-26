@@ -14,10 +14,14 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: '/views/templates/shelters.html',
       controller: 'SheltersController'
     })
-    // .when('/bunnies', {
-    //   templateUrl: '/views/templates/bunnies.html',
-    //   controller: 'BunniesController'
-    // })
+    .when('/cats', {
+      templateUrl: '/views/templates/cats.html',
+      controller: 'CatsController'
+    })
+    .when('/reptiles', {
+      templateUrl: '/views/templates/reptiles.html',
+      controller: 'ReptilesController'
+    })
     .otherwise({
       redirectTo: 'home'
     });
