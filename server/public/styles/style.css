@@ -1,0 +1,57 @@
+body {
+  background-image: url(/images/background.gif);
+}
+
+main {
+  background-color: lightgray;
+  border-radius: 20px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+ul{
+  margin-left: -20px;
+  list-style-type: none;
+  text-align: center;
+}
+
+li{
+  padding: 6px;
+  font-size: 20px;
+  display: inline;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.animalpic {
+  height: 300px;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+.shelterstable th, td {
+    border-bottom: 1px solid black;
+}
+.animaltable th {
+    border-bottom: 1px solid black;
+}
+
+.animaltable td {
+  padding-bottom: 20px;
+}
+
+.petdescription {
+  width: 500px;
+}
+
+.shelterFinder {
+  border: 20px;
+}

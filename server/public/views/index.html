@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="/vendors/bootstrap.min.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
-    <!-- Angular -->
-    <script type="text/javascript" src="/vendors/angular.min.js"></script>
-    <script type="text/javascript" src="/scripts/ang_app.js"></script>
+  <head lang="en">
+      <meta charset="UTF-8">
+      <title>Random Pet API Challenge</title>
+      <link rel="stylesheet" href="/styles/style.css" />
+      <!-- Angular -->
+      <script type="text/javascript" src="/vendors/angular.min.js"></script>
+      <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+      <script type="text/javascript" src="/scripts/app.js"></script>
+      <script type="text/javascript" src="/scripts/controllers/homeController.js"></script>
+      <script type="text/javascript" src="/scripts/controllers/dogsController.js"></script>
+      <script type="text/javascript" src="/scripts/controllers/catsController.js"></script>
+      <script type="text/javascript" src="/scripts/controllers/bunniesController.js"></script>
+      <script type="text/javascript" src="/scripts/controllers/sheltersController.js"></script>
 
+  </head>
+  <body>
+      <h1>Random Pet Finder</h1>
+      <div ng-include="'/views/templates/nav.html'" class="nav"></div>
+      <main ng-view></main>
 
-</head>
-<body>
-    <h1>Data APIs!</h1>
-    <div ng-controller="APIController">
-        <h2>{{animal.name.$t}}</h2>
-        <p>{{animal.description.$t}}</p>
-    </div>
-</body>
+  </body>
 </html>

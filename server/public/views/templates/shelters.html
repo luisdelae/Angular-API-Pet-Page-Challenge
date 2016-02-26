@@ -1,0 +1,42 @@
+<div class="shelterFinder">
+  <h2>Find a shelter near you!</h2>
+  <form id="findShelter">
+    <p>Enter Zip: <input id="zipcode" type="number" name="zipcode" ng-model="zipcode"/></p>
+    <button ng-click="shelterFinder(); showme=true">Find Shelters!</button>
+  </form>
+</div>
+
+<div ng-show="showme">
+  <h3>Here are the closest 10 shelters:</h3>
+  <table class="shelterstable">
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Address
+      </th>
+      <th>
+        Phone #
+      </th>
+      <th>
+        Email
+      </th>
+    </tr>
+    <tr ng-repeat="shelters in sheltersArray">
+      <td>
+        {{shelters.name.$t}}
+      </td>
+      <td>
+        {{shelters.address1.$t}} {{shelters.address2.$t}} <br />
+        {{shelters.city.$t}} {{shelters.state.$t}}, {{shelters.zip.$t}}
+      </td>
+      <td>
+        {{shelters.phone.$t}}
+      </td>
+      <td>
+        {{shelters.email.$t}}
+      </td>
+    </tr>
+  </table>
+</div>
